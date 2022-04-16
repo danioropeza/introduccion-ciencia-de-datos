@@ -1,5 +1,5 @@
 title: Introducción a la Ciencia de Datos
-author: ""
+author: "Daniel Oropeza and Sebastian Jordan"
 logo: logo.png
 
 execute:
@@ -13,19 +13,20 @@ bibtex_bibfiles:
   - references.bib
 
 repository:
-  url: https://github.com/jordanmontt/introduccion-ciencia-de-datos
+  url: https://github.com/danioropeza/introduccion-ciencia-de-datos
   path_to_book: docs
   branch: master
 
 html:
   favicon: logo.png
-  use_issues_button: true
+  use_issues_button: false
   use_repository_button: true
   home_page_in_navbar: true
 
 sphinx:
   config:
     html_show_copyright: false
+    language: es
 
 parse:
   myst_enable_extensions:
