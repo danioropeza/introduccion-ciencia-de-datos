@@ -54,7 +54,7 @@ En esta página web aprenderás desde un inicio cómo funciona la ciencia de dat
 El contenido de los notebooks fue creado y estructurado por nuestro docente Marcelo Rocabado quién nos compartió los archivos en su clase de "Sistemas de información III" durante el semestre I-2020. Daniel Oropeza y Sebastian Jordan, agregaron algunas mejoras como ser: refatorizaciones de código, mejora de la redacción de los textos, ejercicios resueltos durante la matería y unimos todo los archivos de su clase con Jupyter Book para publicarlo en internet.
 
 ### Contacto de información
-Daniel Oropeza: https://www.linkedin.com/in/dani-oropeza/
+Daniel Oropeza: [https://www.linkedin.com/in/dani-oropeza/](https://www.linkedin.com/in/dani-oropeza/)
 
-Sebastian Jordan: https://www.linkedin.com/in/jordanmontt/
+Sebastian Jordan: [https://www.linkedin.com/in/jordanmontt/](https://www.linkedin.com/in/jordanmontt/)
 
