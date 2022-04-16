@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,6 +40,7 @@
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -50,12 +51,12 @@
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../../_static/logo.png"/>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
     <link rel="next" title="Análisis exploratorio de datos multivariable" href="5.3%20Analisis%20exploratorio%20de%20datos%20multidimensionales.html" />
     <link rel="prev" title="Análisis exploratorio de datos" href="5.1%20Introduccion%20al%20Analisis%20Exploratorio%20de%20Datos.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="es">
     
 
     <!-- Google Analytics -->
@@ -87,7 +88,7 @@
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
@@ -247,8 +248,8 @@
             
             <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
                 data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-arrow-left"></i>
                 <i class="fas fa-arrow-up"></i>
@@ -256,7 +257,7 @@
             
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -264,10 +265,10 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../../_sources/Notebooks/5. Analisis Exploratorio/5.2 Análisis exploratorio de datos unidimensionales.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -280,12 +281,9 @@
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/danioropeza/introduccion-ciencia-de-datos"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/danioropeza/introduccion-ciencia-de-datos/issues/new?title=Issue%20on%20page%20%2FNotebooks/5. Analisis Exploratorio/5.2 Análisis exploratorio de datos unidimensionales.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        
         
     </div>
 </div>
@@ -293,8 +291,8 @@
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -305,7 +303,7 @@
     <div class="dropdown-buttons">
         
         <a class="binder-button" href="https://mybinder.org/v2/gh/danioropeza/introduccion-ciencia-de-datos/master?urlpath=tree/docs/Notebooks/5. Analisis Exploratorio/5.2 Análisis exploratorio de datos unidimensionales.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
@@ -322,7 +320,7 @@
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+                <i class="fas fa-list"></i> Contenido
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -404,7 +402,7 @@
                     <div id="jb-print-toc">
                         
                         <div>
-                            <h2> Contents </h2>
+                            <h2> Contenido </h2>
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
@@ -480,20 +478,20 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="analisis-unidimensional">
-<h1>Análisis unidimensional<a class="headerlink" href="#analisis-unidimensional" title="Permalink to this headline">¶</a></h1>
+<h1>Análisis unidimensional<a class="headerlink" href="#analisis-unidimensional" title="Enlazar permanentemente con este título">¶</a></h1>
 <p><a id="1"></a></p>
 <div class="section" id="objetivo">
-<h2>Objetivo<a class="headerlink" href="#objetivo" title="Permalink to this headline">¶</a></h2>
+<h2>Objetivo<a class="headerlink" href="#objetivo" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Como ya se dijo anteriormente, el análisis unidimensional consiste en analizar individualmente a las variables (columnas de un DataFrame) para conocer sus características y su naturaleza. Para ello, se emplea mayormente gráficos, aunque tambien se pueden calcular valores estadísticos como el promdio, la mediana, la kurtosis, entre muchos otros.</p>
 </div>
 <div class="section" id="ejemplo-de-como-graficar">
-<h2>Ejemplo de como graficar<a class="headerlink" href="#ejemplo-de-como-graficar" title="Permalink to this headline">¶</a></h2>
+<h2>Ejemplo de como graficar<a class="headerlink" href="#ejemplo-de-como-graficar" title="Enlazar permanentemente con este título">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="#8">Ejemplo visualización</a></p></li>
 </ul>
 </div>
 <div class="section" id="tecnicas-de-analisis">
-<h2>Técnicas de análisis<a class="headerlink" href="#tecnicas-de-analisis" title="Permalink to this headline">¶</a></h2>
+<h2>Técnicas de análisis<a class="headerlink" href="#tecnicas-de-analisis" title="Enlazar permanentemente con este título">¶</a></h2>
 <ol class="simple">
 <li><p><a class="reference external" href="#3">DataFrame.describe()</a></p></li>
 <li><p><a class="reference external" href="#1">Indicadores de tendencia central</a></p></li>
@@ -504,7 +502,7 @@
 <li><p><a class="reference external" href="#7">Utilizando Groupby</a></p></li>
 </ol>
 <div class="section" id="importar-lbrerias-y-cargar-datos">
-<h3>Importar lbrerías y cargar datos<a class="headerlink" href="#importar-lbrerias-y-cargar-datos" title="Permalink to this headline">¶</a></h3>
+<h3>Importar lbrerías y cargar datos<a class="headerlink" href="#importar-lbrerias-y-cargar-datos" title="Enlazar permanentemente con este título">¶</a></h3>
 <p><strong><a class="reference external" href="https://archive.ics.uci.edu/ml/datasets/Forest+Fires">Fuente de los datos</a></strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -539,7 +537,7 @@
 </div>
 </div>
 <div class="section" id="dataframe-describe">
-<h2>DataFrame.describe()<a class="headerlink" href="#dataframe-describe" title="Permalink to this headline">¶</a></h2>
+<h2>DataFrame.describe()<a class="headerlink" href="#dataframe-describe" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><a id="3"></a></p>
 <p>Llamando a la función<code class="docutils literal notranslate"><span class="pre">describe()</span></code> de <em>Pandas</em> se obtiene una matriz la cual tiene varios indicadores para cada una de las columnas. Con estos indicaroes se puede tener una visión general de los datos.</p>
 <div class="cell docutils container">
@@ -778,7 +776,7 @@
 </div>
 </div>
 <div class="section" id="visualizacion">
-<h2>Visualización<a class="headerlink" href="#visualizacion" title="Permalink to this headline">¶</a></h2>
+<h2>Visualización<a class="headerlink" href="#visualizacion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><a id="8"></a></p>
 <p>Esto es solamente un ejemplo de la manipulación de las librerías para graficar. En la celda de abajo, se grafica la distribución de los valores de la <em>temperatura</em> y se añaden líneas al gráfico las cuales muestran los indicares de tendencia central así como los límites de los valores atípicos.</p>
 <p>Para graficar los datos se utilizan estas dos librerías:</p>
@@ -818,7 +816,7 @@
 </div>
 </div>
 <div class="section" id="indicadores-de-tendencia-central">
-<h2>Indicadores de tendencia central<a class="headerlink" href="#indicadores-de-tendencia-central" title="Permalink to this headline">¶</a></h2>
+<h2>Indicadores de tendencia central<a class="headerlink" href="#indicadores-de-tendencia-central" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><a id="1"></a></p>
 <p>Los indicadores que son sirven para medir la tendencia central son:</p>
 <ul class="simple">
@@ -875,7 +873,7 @@
 <a class="reference internal image-reference" href="../../_images/02-quartiles.png"><img alt="../../_images/02-quartiles.png" src="../../_images/02-quartiles.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="indicadores-de-dispersion">
-<h2>Indicadores de dispersión<a class="headerlink" href="#indicadores-de-dispersion" title="Permalink to this headline">¶</a></h2>
+<h2>Indicadores de dispersión<a class="headerlink" href="#indicadores-de-dispersion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><a id="2"></a></p>
 <p>Estos indicares muestran cuan dispersos están los datos.</p>
 <ul class="simple">
@@ -933,7 +931,7 @@ Varianza: 33.71689795030963, 33.71689795030963, 33.65168151326841
 </div>
 </div>
 <ul class="simple">
-<li><p><strong>Curtosis. Indicador de la “anchura” de una distribución</strong></p></li>
+<li><p><strong>Curtosis. Indicador de la «anchura» de una distribución</strong></p></li>
 </ul>
 <a class="reference internal image-reference" href="../../_images/06-kurtosis.png"><img alt="../../_images/06-kurtosis.png" src="../../_images/06-kurtosis.png" style="width: 600px;" /></a>
 <div class="cell docutils container">
@@ -955,7 +953,7 @@ Varianza: 33.71689795030963, 33.71689795030963, 33.65168151326841
 </div>
 </div>
 <div class="section" id="graficos-de-distribucion">
-<h2>Gráficos de distribución<a class="headerlink" href="#graficos-de-distribucion" title="Permalink to this headline">¶</a></h2>
+<h2>Gráficos de distribución<a class="headerlink" href="#graficos-de-distribucion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><a id="4"></a></p>
 <p>Para visualizar los gráficos, se puede utilizar, en vez de librerias externas como en el ejemplo de arriba, la librería <em>pandas</em>. <strong><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html">Panda’s Plots</a></strong></p>
 <ul class="simple">
@@ -1013,7 +1011,7 @@ Varianza: 33.71689795030963, 33.71689795030963, 33.65168151326841
 </div>
 </div>
 <div class="section" id="graficos-de-comparacion">
-<h2>Gráficos de comparación<a class="headerlink" href="#graficos-de-comparacion" title="Permalink to this headline">¶</a></h2>
+<h2>Gráficos de comparación<a class="headerlink" href="#graficos-de-comparacion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><a id="5"></a></p>
 <p><strong><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html">Panda’s Plots</a></strong></p>
 <ul class="simple">
@@ -1043,7 +1041,7 @@ Varianza: 33.71689795030963, 33.71689795030963, 33.65168151326841
 <p>Para ambos tipos de gráficos, se recomienda aplicarlos para un número reducido de variables (~ 6)</p>
 </div>
 <div class="section" id="graficos-de-composicion">
-<h2>Gráficos de composición<a class="headerlink" href="#graficos-de-composicion" title="Permalink to this headline">¶</a></h2>
+<h2>Gráficos de composición<a class="headerlink" href="#graficos-de-composicion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><a id="6"></a></p>
 <p><strong><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html">Panda’s Plots</a></strong></p>
 <ul class="simple">
@@ -1099,7 +1097,7 @@ Varianza: 33.71689795030963, 33.71689795030963, 33.65168151326841
 </div>
 </div>
 <div class="section" id="utilizando-groupby">
-<h2>Utilizando Groupby<a class="headerlink" href="#utilizando-groupby" title="Permalink to this headline">¶</a></h2>
+<h2>Utilizando Groupby<a class="headerlink" href="#utilizando-groupby" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><a id="7"></a></p>
 <p><strong><a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.23.1/api.html#groupby">Panda’s groupby</a></strong></p>
 <p><strong><a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.23.1/generated/pandas.core.groupby.DataFrameGroupBy.agg.html">Panda’s DataFrameGroupBy aggr</a></strong></p>
@@ -1258,16 +1256,16 @@ Varianza: 33.71689795030963, 33.71689795030963, 33.65168151326841
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="5.1%20Introduccion%20al%20Analisis%20Exploratorio%20de%20Datos.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="5.1%20Introduccion%20al%20Analisis%20Exploratorio%20de%20Datos.html" title="anterior página">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">anterior</p>
             <p class="prev-next-title">Análisis exploratorio de datos</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="5.3%20Analisis%20exploratorio%20de%20datos%20multidimensionales.html" title="next page">
+    <a class='right-next' id="next-link" href="5.3%20Analisis%20exploratorio%20de%20datos%20multidimensionales.html" title="siguiente página">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">siguiente</p>
         <p class="prev-next-title">Análisis exploratorio de datos multivariable</p>
     </div>
     <i class="fas fa-angle-right"></i>
@@ -1279,7 +1277,7 @@ Varianza: 33.71689795030963, 33.71689795030963, 33.65168151326841
     <footer class="footer">
   <p>
     
-      By Daniel Oropeza and Sebastian Jordan<br/>
+      Por Daniel Oropeza and Sebastian Jordan<br/>
     
   </p>
 </footer>

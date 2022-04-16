@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,6 +40,7 @@
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -50,12 +51,12 @@
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../../_static/logo.png"/>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
     <link rel="next" title="Feature selection (selección de variables)" href="../8.%20Feature%20Selection/03_feature-selection.html" />
     <link rel="prev" title="Ejercicio Feature Engineering" href="../6.%20Feature%20Engineering/Ejercicio%20feature%20engineering.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="es">
     
 
     <!-- Google Analytics -->
@@ -87,7 +88,7 @@
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
@@ -247,8 +248,8 @@
             
             <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
                 data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-arrow-left"></i>
                 <i class="fas fa-arrow-up"></i>
@@ -256,7 +257,7 @@
             
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -264,10 +265,10 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../../_sources/Notebooks/7. Tercer parcial Ejercicio tema 5 y 6/pec03.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -280,12 +281,9 @@
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/danioropeza/introduccion-ciencia-de-datos"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/danioropeza/introduccion-ciencia-de-datos/issues/new?title=Issue%20on%20page%20%2FNotebooks/7. Tercer parcial Ejercicio tema 5 y 6/pec03.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        
         
     </div>
 </div>
@@ -293,8 +291,8 @@
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -305,7 +303,7 @@
     <div class="dropdown-buttons">
         
         <a class="binder-button" href="https://mybinder.org/v2/gh/danioropeza/introduccion-ciencia-de-datos/master?urlpath=tree/docs/Notebooks/7. Tercer parcial Ejercicio tema 5 y 6/pec03.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
@@ -322,18 +320,18 @@
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+                <i class="fas fa-list"></i> Contenido
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#elimine-las-variables-columnas-ticket-y-cabin">
-   1. Elimine las variables/columnas ‘Ticket’ y ‘Cabin’
+   1. Elimine las variables/columnas “Ticket” y “Cabin”
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#encuentre-los-mejores-valores-para-completar-la-variable-embarked-para-los-pasajeros-con-datos-faltantes">
-   2. Encuentre los mejores valores para completar la variable ‘Embarked’ para los  pasajeros con datos faltantes
+   2. Encuentre los mejores valores para completar la variable “Embarked” para los  pasajeros con datos faltantes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -343,12 +341,12 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#encuentre-los-mejores-valores-para-completar-la-variable-age-para-los-pasajeros-con-datos-faltantes">
-   4. Encuentre los mejores valores para completar la variable ‘Age’ para los pasajeros con datos faltantes
+   4. Encuentre los mejores valores para completar la variable “Age” para los pasajeros con datos faltantes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#cree-una-nueva-variable-ismother-1-es-madre-0-no-es-madre">
-   5. Cree una nueva variable ‘IsMother’ (1=es madre, 0=no es madre)
+   5. Cree una nueva variable “IsMother” (1=es madre, 0=no es madre)
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -379,18 +377,18 @@
                     <div id="jb-print-toc">
                         
                         <div>
-                            <h2> Contents </h2>
+                            <h2> Contenido </h2>
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#elimine-las-variables-columnas-ticket-y-cabin">
-   1. Elimine las variables/columnas ‘Ticket’ y ‘Cabin’
+   1. Elimine las variables/columnas “Ticket” y “Cabin”
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#encuentre-los-mejores-valores-para-completar-la-variable-embarked-para-los-pasajeros-con-datos-faltantes">
-   2. Encuentre los mejores valores para completar la variable ‘Embarked’ para los  pasajeros con datos faltantes
+   2. Encuentre los mejores valores para completar la variable “Embarked” para los  pasajeros con datos faltantes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -400,12 +398,12 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#encuentre-los-mejores-valores-para-completar-la-variable-age-para-los-pasajeros-con-datos-faltantes">
-   4. Encuentre los mejores valores para completar la variable ‘Age’ para los pasajeros con datos faltantes
+   4. Encuentre los mejores valores para completar la variable “Age” para los pasajeros con datos faltantes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#cree-una-nueva-variable-ismother-1-es-madre-0-no-es-madre">
-   5. Cree una nueva variable ‘IsMother’ (1=es madre, 0=no es madre)
+   5. Cree una nueva variable “IsMother” (1=es madre, 0=no es madre)
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -430,7 +428,7 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="ejercicio-miscelaneo-analisis-exploratorio-y-feature-engineering">
-<h1>Ejercicio misceláneo: Análisis exploratorio y Feature Engineering<a class="headerlink" href="#ejercicio-miscelaneo-analisis-exploratorio-y-feature-engineering" title="Permalink to this headline">¶</a></h1>
+<h1>Ejercicio misceláneo: Análisis exploratorio y Feature Engineering<a class="headerlink" href="#ejercicio-miscelaneo-analisis-exploratorio-y-feature-engineering" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -589,7 +587,7 @@
 </div></div></div>
 </div>
 <div class="section" id="elimine-las-variables-columnas-ticket-y-cabin">
-<h2>1. Elimine las variables/columnas ‘Ticket’ y ‘Cabin’<a class="headerlink" href="#elimine-las-variables-columnas-ticket-y-cabin" title="Permalink to this headline">¶</a></h2>
+<h2>1. Elimine las variables/columnas “Ticket” y “Cabin”<a class="headerlink" href="#elimine-las-variables-columnas-ticket-y-cabin" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -880,7 +878,7 @@
 </div>
 </div>
 <div class="section" id="encuentre-los-mejores-valores-para-completar-la-variable-embarked-para-los-pasajeros-con-datos-faltantes">
-<h2>2. Encuentre los mejores valores para completar la variable ‘Embarked’ para los  pasajeros con datos faltantes<a class="headerlink" href="#encuentre-los-mejores-valores-para-completar-la-variable-embarked-para-los-pasajeros-con-datos-faltantes" title="Permalink to this headline">¶</a></h2>
+<h2>2. Encuentre los mejores valores para completar la variable “Embarked” para los  pasajeros con datos faltantes<a class="headerlink" href="#encuentre-los-mejores-valores-para-completar-la-variable-embarked-para-los-pasajeros-con-datos-faltantes" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Embarked</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
@@ -1038,7 +1036,7 @@ Name: Embarked, dtype: object
 </div>
 </div>
 <div class="section" id="complete-el-codigo-de-la-siguiente-funcion-para-extraer-el-titulo-de-cada-pasajero">
-<h2>3. Complete el código de la siguiente función para extraer el título de cada pasajero<a class="headerlink" href="#complete-el-codigo-de-la-siguiente-funcion-para-extraer-el-titulo-de-cada-pasajero" title="Permalink to this headline">¶</a></h2>
+<h2>3. Complete el código de la siguiente función para extraer el título de cada pasajero<a class="headerlink" href="#complete-el-codigo-de-la-siguiente-funcion-para-extraer-el-titulo-de-cada-pasajero" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extractTitle</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
@@ -1375,10 +1373,10 @@ Name: Embarked, dtype: object
 </div>
 </div>
 <div class="section" id="encuentre-los-mejores-valores-para-completar-la-variable-age-para-los-pasajeros-con-datos-faltantes">
-<h2>4. Encuentre los mejores valores para completar la variable ‘Age’ para los pasajeros con datos faltantes<a class="headerlink" href="#encuentre-los-mejores-valores-para-completar-la-variable-age-para-los-pasajeros-con-datos-faltantes" title="Permalink to this headline">¶</a></h2>
+<h2>4. Encuentre los mejores valores para completar la variable “Age” para los pasajeros con datos faltantes<a class="headerlink" href="#encuentre-los-mejores-valores-para-completar-la-variable-age-para-los-pasajeros-con-datos-faltantes" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Tome en cuenta que simplemente emplear el valor de tendencia central (mediana) de todo el conjunto casi nunca es la mejor alternativa
 Para obtener mejores resultados deberá apoyarse en los resultados de un análisis exploratorio de datos
-aplicado a las variable(s) que puedan estar relacionadas con ‘Age’</p>
+aplicado a las variable(s) que puedan estar relacionadas con “Age”</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -1684,12 +1682,12 @@ aplicado a las variable(s) que puedan estar relacionadas con ‘Age’</p>
 </div>
 </div>
 <div class="section" id="cree-una-nueva-variable-ismother-1-es-madre-0-no-es-madre">
-<h2>5. Cree una nueva variable ‘IsMother’ (1=es madre, 0=no es madre)<a class="headerlink" href="#cree-una-nueva-variable-ismother-1-es-madre-0-no-es-madre" title="Permalink to this headline">¶</a></h2>
+<h2>5. Cree una nueva variable “IsMother” (1=es madre, 0=no es madre)<a class="headerlink" href="#cree-una-nueva-variable-ismother-1-es-madre-0-no-es-madre" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="responda-la-siguiente-pregunta-sustentando-su-respuesta-con-los-resultados-de-un-analisis-exploratorio-de-datos">
-<h3>Responda la siguiente pregunta sustentando su respuesta con los resultados de un análisis exploratorio de datos.<a class="headerlink" href="#responda-la-siguiente-pregunta-sustentando-su-respuesta-con-los-resultados-de-un-analisis-exploratorio-de-datos" title="Permalink to this headline">¶</a></h3>
+<h3>Responda la siguiente pregunta sustentando su respuesta con los resultados de un análisis exploratorio de datos.<a class="headerlink" href="#responda-la-siguiente-pregunta-sustentando-su-respuesta-con-los-resultados-de-un-analisis-exploratorio-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
 </div>
 <div class="section" id="las-madres-tuvieron-mayor-probabilidad-de-sobrevivir-al-accidente-del-titanic">
-<h3>Las madres tuvieron mayor probabilidad de sobrevivir al accidente del Titanic?<a class="headerlink" href="#las-madres-tuvieron-mayor-probabilidad-de-sobrevivir-al-accidente-del-titanic" title="Permalink to this headline">¶</a></h3>
+<h3>Las madres tuvieron mayor probabilidad de sobrevivir al accidente del Titanic?<a class="headerlink" href="#las-madres-tuvieron-mayor-probabilidad-de-sobrevivir-al-accidente-del-titanic" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Elegimos a las madres como las mujeres que están casadas y que viajen al menos con un Parch(parientes que sean padres o hijos).</p>
 <p>No incluímos a las mujeres con el título de Miss, para evitar incluir a las mujeres que no son madres pero que
 viajan con sus papás.</p>
@@ -2701,16 +2699,16 @@ pierde mucha información en caso de que una mujer sea madre y no esté casada.<
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../6.%20Feature%20Engineering/Ejercicio%20feature%20engineering.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../6.%20Feature%20Engineering/Ejercicio%20feature%20engineering.html" title="anterior página">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">anterior</p>
             <p class="prev-next-title">Ejercicio Feature Engineering</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../8.%20Feature%20Selection/03_feature-selection.html" title="next page">
+    <a class='right-next' id="next-link" href="../8.%20Feature%20Selection/03_feature-selection.html" title="siguiente página">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">siguiente</p>
         <p class="prev-next-title">Feature selection (selección de variables)</p>
     </div>
     <i class="fas fa-angle-right"></i>
@@ -2722,7 +2720,7 @@ pierde mucha información en caso de que una mujer sea madre y no esté casada.<
     <footer class="footer">
   <p>
     
-      By Daniel Oropeza and Sebastian Jordan<br/>
+      Por Daniel Oropeza and Sebastian Jordan<br/>
     
   </p>
 </footer>

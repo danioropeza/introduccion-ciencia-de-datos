@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,6 +40,7 @@
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -50,12 +51,12 @@
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../../_static/logo.png"/>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
     <link rel="next" title="Ejercicio misceláneo: NLP, Web Scrapping" href="../4.%20Segundo%20parcial%20Ejercicio%20tema%201%2C%202%20y%203/Prueba%20dos%20resulta%20por%20el%20profesor.html" />
     <link rel="prev" title="Ejercicio: Web Scrapping para extraer información de un artículo" href="../2.%20Web%20Scraping/Ejercicio_NUSO_web_scrappng.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="es">
     
 
     <!-- Google Analytics -->
@@ -87,7 +88,7 @@
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
@@ -247,8 +248,8 @@
             
             <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
                 data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-arrow-left"></i>
                 <i class="fas fa-arrow-up"></i>
@@ -256,7 +257,7 @@
             
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -264,10 +265,10 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../../_sources/Notebooks/3. Procesamiento del Lenguaje Natural/nlp.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -280,12 +281,9 @@
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/danioropeza/introduccion-ciencia-de-datos"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/danioropeza/introduccion-ciencia-de-datos/issues/new?title=Issue%20on%20page%20%2FNotebooks/3. Procesamiento del Lenguaje Natural/nlp.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        
         
     </div>
 </div>
@@ -293,8 +291,8 @@
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -305,7 +303,7 @@
     <div class="dropdown-buttons">
         
         <a class="binder-button" href="https://mybinder.org/v2/gh/danioropeza/introduccion-ciencia-de-datos/master?urlpath=tree/docs/Notebooks/3. Procesamiento del Lenguaje Natural/nlp.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
@@ -322,7 +320,7 @@
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+                <i class="fas fa-list"></i> Contenido
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -457,7 +455,7 @@
                     <div id="jb-print-toc">
                         
                         <div>
-                            <h2> Contents </h2>
+                            <h2> Contenido </h2>
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
@@ -586,16 +584,16 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="procesamiento-de-lenguaje-natural-nlp">
-<h1>Procesamiento de Lenguaje Natural (<em>NLP</em>)<a class="headerlink" href="#procesamiento-de-lenguaje-natural-nlp" title="Permalink to this headline">¶</a></h1>
+<h1>Procesamiento de Lenguaje Natural (<em>NLP</em>)<a class="headerlink" href="#procesamiento-de-lenguaje-natural-nlp" title="Enlazar permanentemente con este título">¶</a></h1>
 <p><strong><a class="reference external" href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a></strong> es un campo de las ciencias de la computación, inteligencia artificial y lingüística que estudia las interacciones entre las computadoras y el lenguaje humano. Se ocupa de la formulación e investigación de mecanismos eficaces computacionalmente para la comunicación entre personas y máquinas por medio del lenguaje natural. En poca palabras, hacer que la computadora pueden entender y responder en lenguage natural.</p>
 <div class="section" id="algunas-aplicaciones-de-nlp">
-<h2>Algunas aplicaciones de <em>NLP</em><a class="headerlink" href="#algunas-aplicaciones-de-nlp" title="Permalink to this headline">¶</a></h2>
+<h2>Algunas aplicaciones de <em>NLP</em><a class="headerlink" href="#algunas-aplicaciones-de-nlp" title="Enlazar permanentemente con este título">¶</a></h2>
 <ul class="simple">
 <li><p>Extracción de palabras clave (<em>Keyword extraction</em>): identificación automática de términos importantes que mejor describan el tema de un documento.</p></li>
 <li><p>Extracción de entidades (<em>Named-Entity Recognition</em>): busca localizar en el texto entidades como personas, organizaciones, lugares, expresiones de tiempo y cantidades.</p></li>
 <li><p>Clasificación de texto: es asignar una categoría a un documento, esto sirve para la detección de <em>spam</em>, análisis de sentimientos, priorización de contenido, etc.</p></li>
 <li><p>Resumen automático (<em>Text summarization</em>): encontrar las oraciones más informativas en un documento.</p></li>
-<li><p><em>Topic modeling</em>: es un tipo de modelo estadístico para descubrir los “topics” abstractos que ocurren en una colección de documentos. Descubre semanticas ocultas en un cuerpo de texto. Encuentra el tema en un conjunto de documentos.</p></li>
+<li><p><em>Topic modeling</em>: es un tipo de modelo estadístico para descubrir los «topics» abstractos que ocurren en una colección de documentos. Descubre semanticas ocultas en un cuerpo de texto. Encuentra el tema en un conjunto de documentos.</p></li>
 <li><p>Traducción automática (<em>Machine translation</em>): el uso de <em>software</em> para traducir texto o habla de un lenguaje natural a otro.</p></li>
 </ul>
 <ol class="simple">
@@ -622,13 +620,13 @@
 </div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="vocabulario-del-problema">
-<h1>Vocabulario del problema<a class="headerlink" href="#vocabulario-del-problema" title="Permalink to this headline">¶</a></h1>
-<p>En un proyecto de <em>NLP</em> se trabajan con colecciones de “documentos”. Cada documento en un fragmento de texto que se debe procesar de manera individual (clasificar, representar, etc). Algunos ejemplos de documentos son: tweets, revisiones, artículos, libros, etc. El conjunto de todas la palabras que aparecen en todos los documentos constituye el <strong>vocabulario del problema</strong>. En muchos casos el tamaño del problema puede reducir el desempeño de la solución y es necesario reducirlo.</p>
+<h1>Vocabulario del problema<a class="headerlink" href="#vocabulario-del-problema" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>En un proyecto de <em>NLP</em> se trabajan con colecciones de «documentos». Cada documento en un fragmento de texto que se debe procesar de manera individual (clasificar, representar, etc). Algunos ejemplos de documentos son: tweets, revisiones, artículos, libros, etc. El conjunto de todas la palabras que aparecen en todos los documentos constituye el <strong>vocabulario del problema</strong>. En muchos casos el tamaño del problema puede reducir el desempeño de la solución y es necesario reducirlo.</p>
 <p>Los elementos en el vocabulario se conocen como <em>tokens</em>; dependiendo del problema y las decisiones de diseño podrían no ser necesariamente una palabra. Por ejemplo, los emoticones, lemas o palabras compuestas.</p>
 <p>En este <em>notebook</em> se muestra como realizar una de las tareas más comunes que ayudan a reducir el tamaño del vocabulario: la eliminación de palabras de parada (<em>stop words</em>).</p>
 <p><a id="2"></a></p>
 <div class="section" id="tokenizacion">
-<h2>Tokenización<a class="headerlink" href="#tokenizacion" title="Permalink to this headline">¶</a></h2>
+<h2>Tokenización<a class="headerlink" href="#tokenizacion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><a class="reference external" href="https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html">Tokenización</a> es el proceso de separar el texto en piezas llamadas <em>tokens</em>. Es la primera tarea/proceso en cualquier proyecto <em>NLP</em>. Es fundamental realizarla bien para no afectar la calidad de los datos de entrada en las etapas siguientes. Se recomienda usar un <em>tokenizer</em> reconocido y evitar intentar programar uno desde cero.</p>
 <p><img alt="Tokenización" src="../../_images/01-tokenization.png" /></p>
 <p>A continuación, se muestra un ejemplo de tokenización sobre esta <a class="reference external" href="https://www.lostiempos.com/deportes/multideportivo/20200115/olympic-albert-einstein-ucb-lpz-van-paso-firme-liga-superior">noticia</a>. Primero debes cargar la noticia.</p>
@@ -648,8 +646,8 @@
 </div>
 </div>
 <div class="section" id="tokenizacion-a-nivel-oraciones">
-<h3>Tokenización a nivel oraciones<a class="headerlink" href="#tokenizacion-a-nivel-oraciones" title="Permalink to this headline">¶</a></h3>
-<p>La función <font color="gray">sent_tokenize(…)</font> de <font color="gray">nltk.tokenize</font> es el tokenizador a nivel de oraciones. Si tienes problemas importando la librería <a class="reference external" href="https://www.nltk.org/api/nltk.tokenize.html"><em>nltk</em></a>, ejecuta <font color="gray">nltk.download(‘punkt’)</font> desde la consola de Python para descargar la librería.</p>
+<h3>Tokenización a nivel oraciones<a class="headerlink" href="#tokenizacion-a-nivel-oraciones" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La función <font color="gray">sent_tokenize(…)</font> de <font color="gray">nltk.tokenize</font> es el tokenizador a nivel de oraciones. Si tienes problemas importando la librería <a class="reference external" href="https://www.nltk.org/api/nltk.tokenize.html"><em>nltk</em></a>, ejecuta <font color="gray">nltk.download(“punkt”)</font> desde la consola de Python para descargar la librería.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -676,7 +674,7 @@
 </div>
 </div>
 <div class="section" id="tokenizacion-a-nivel-de-palabras">
-<h3>Tokenización a nivel de palabras.<a class="headerlink" href="#tokenizacion-a-nivel-de-palabras" title="Permalink to this headline">¶</a></h3>
+<h3>Tokenización a nivel de palabras.<a class="headerlink" href="#tokenizacion-a-nivel-de-palabras" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>La función <font color="gray">nltk.word_tokenize(…)</font> es el tokenizador a nivel de palabras recomendado por <em>NLTK</em>. El resultado de esta función es una lista con todas las palabras de la noticia. Internamente usa una instancia de la clase <font color="gray">TreebankWordTokenizer</font> (en la versión más reciente)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -836,12 +834,12 @@
 </div>
 </div>
 <div class="section" id="quitar-palabras-de-parada">
-<h2>Quitar palabras de parada<a class="headerlink" href="#quitar-palabras-de-parada" title="Permalink to this headline">¶</a></h2>
+<h2>Quitar palabras de parada<a class="headerlink" href="#quitar-palabras-de-parada" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Dependiendo del lenguaje existen palabras que tienden a repetirse mucho más que otras, estas generalmente son los artículos, las preposiciones, y las conjunciones. Estas palabras suelen ser perjudiciales al momento de analizar el texto porque no aportan información relevante, es por eso que se deben quitar las palabras de parada del vocabulario del problema. Tener en cuenta que NO hay una lista universal y exhaustiva de estas palabras. Cada lenguage e incluso tipo de problema puede tener su propia lista de palabras de parada.</p>
 <p><img alt="remove_stopwords" src="../../_images/02-remove_stopwords.png" /></p>
 <p>Puesto que estas listas pueden variar dependiendo de la librería o incluso entre versiones de la misma librería, incluir este paso puede dificultar la reproducción de los resultados en otros entornos. Veremos más adelante que hay otros mecanismos para lidiar con este tipo de palabras (<em>TF</em>, <em>IDF</em>).</p>
 <p>Ten en cuenta tambien que quitar alguna palabra de parada como los artículos podría cambiar completamente el significado de algunas palabras compuestas.</p>
-<p>Por ejemplo: “La Paz” nombre de un departamento de Bolivia se convierte en -&gt; “Paz” y pierde el sentido.</p>
+<p>Por ejemplo: «La Paz» nombre de un departamento de Bolivia se convierte en -&gt; «Paz» y pierde el sentido.</p>
 <p>Si deseas aprender más, ingresa en los siguientes enlaces:</p>
 <ul class="simple">
 <li><p><strong><a class="reference external" href="https://www.pythond.com/21143/como-eliminar-las-palabras-de-parada-usando-nltk-o-python.html">Cómo eliminar las palabras de parada usando nltk o python</a></strong></p></li>
@@ -849,7 +847,7 @@
 <li><p><strong><a class="reference external" href="https://github.com/xiamx/node-nltk-stopwords/blob/master/data/stopwords/spanish">Proyecto node-nltk-stopwords</a></strong></p></li>
 <li><p><strong><a class="reference external" href="https://www.ranks.nl/stopwords">Stopwords &#64; ranks.nl</a></strong></p></li>
 </ul>
-<p>Si tienes problemas importando la libreria <em>nltk</em>, ejecuta este comando <font color="gray">nltk.download(‘stopwords’)</font>. En el ejemplo se puede ver la lista de palabras de parada que nos ofrece la libreria <font color="gray">nltk.corpus</font></p>
+<p>Si tienes problemas importando la libreria <em>nltk</em>, ejecuta este comando <font color="gray">nltk.download(“stopwords”)</font>. En el ejemplo se puede ver la lista de palabras de parada que nos ofrece la libreria <font color="gray">nltk.corpus</font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -1659,7 +1657,7 @@
 <p><a id="4"></a></p>
 </div>
 <div class="section" id="otras-tareas-de-limpieza-que-se-pueden-considerar">
-<h2>Otras tareas de limpieza que se pueden considerar<a class="headerlink" href="#otras-tareas-de-limpieza-que-se-pueden-considerar" title="Permalink to this headline">¶</a></h2>
+<h2>Otras tareas de limpieza que se pueden considerar<a class="headerlink" href="#otras-tareas-de-limpieza-que-se-pueden-considerar" title="Enlazar permanentemente con este título">¶</a></h2>
 <ul class="simple">
 <li><p>Unificar el case - <font color="gray">string.lower()&gt;</font>.</p></li>
 <li><p>Quitar acentos (probablemente no es buena idea si el contenido está en español)</p></li>
@@ -1677,7 +1675,7 @@
 <p><a id="5"></a></p>
 </div>
 <div class="section" id="lematizacion">
-<h2>Lematización<a class="headerlink" href="#lematizacion" title="Permalink to this headline">¶</a></h2>
+<h2>Lematización<a class="headerlink" href="#lematizacion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Eliminar las variaciones de la misma palabra para tratar las variaciones como una sola entidad. (<em>close, closed, closing</em>; caminaba, caminando, caminar). Al igual que la eliminación de palabras de parada, se emplea para reducir la cantidad de elementos en el vocabulario de un problema.</p>
 <p>Algunos enlaces que podrían servirte de ayuda:</p>
 <ul class="simple">
@@ -1687,7 +1685,7 @@
 <p><a id="6"></a></p>
 </div>
 <div class="section" id="identificar-n-gramas">
-<h2>Identificar n-gramas<a class="headerlink" href="#identificar-n-gramas" title="Permalink to this headline">¶</a></h2>
+<h2>Identificar n-gramas<a class="headerlink" href="#identificar-n-gramas" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Grupos de N palabras que están siempre juntas (Nueva York, Santa Cruz) y que deben tratarse como una sola entidad/palabra.</p>
 <p>Algunos enlaces que podrían servirte de ayuda:</p>
 <ul class="simple">
@@ -1697,7 +1695,7 @@
 <p><a id="7"></a></p>
 </div>
 <div class="section" id="desambiguacion-linguistica-word-sense-disambiguation">
-<h2>Desambiguación lingüística (<em>Word Sense Disambiguation</em>)<a class="headerlink" href="#desambiguacion-linguistica-word-sense-disambiguation" title="Permalink to this headline">¶</a></h2>
+<h2>Desambiguación lingüística (<em>Word Sense Disambiguation</em>)<a class="headerlink" href="#desambiguacion-linguistica-word-sense-disambiguation" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Asignar significado en base al contexto. ¿Con qué sentido se usa una palabra? En el caso de la <strong><a class="reference external" href="https://es.wikipedia.org/wiki/Polisemia">polisemia</a></strong>, ¿cuál de los significados es el más apropiado dado el contexto?</p>
 <p>Ejemplos:</p>
 <ul class="simple">
@@ -1706,7 +1704,7 @@
 <li><p>Puso dos velas a San Pedro.</p></li>
 <li><p>Los egipcios fueron los primeros constructores de barcos de vela de los que se tiene noticia.</p></li>
 </ul>
-<p>El desarrollo de algoritmos para reproducir esta capacidad humana (desambiguar el significado) a menudo puede ser una  <strong><a class="reference external" href="https://es.wikipedia.org/wiki/Problema_no_resuelto">tarea muy difícil</a></strong>. En la frase “La carne está sabrosa” hay también cierto contenido implícito: se asume que estamos hablando de carne cocida.</p>
+<p>El desarrollo de algoritmos para reproducir esta capacidad humana (desambiguar el significado) a menudo puede ser una  <strong><a class="reference external" href="https://es.wikipedia.org/wiki/Problema_no_resuelto">tarea muy difícil</a></strong>. En la frase «La carne está sabrosa» hay también cierto contenido implícito: se asume que estamos hablando de carne cocida.</p>
 <p>Algunos enlaces que podrían servirte de ayuda:</p>
 <ul class="simple">
 <li><p><strong><a class="reference external" href="https://es.wikipedia.org/wiki/Desambiguaci%C3%B3n_ling%C3%BC%C3%ADstica">Desambiguación lingüística</a></strong></p></li>
@@ -1726,7 +1724,7 @@
 <p><a id="8"></a></p>
 </div>
 <div class="section" id="etiquetado-gramatical-part-of-speech-tagging">
-<h2>Etiquetado gramatical (<em>Part of Speech Tagging</em>)<a class="headerlink" href="#etiquetado-gramatical-part-of-speech-tagging" title="Permalink to this headline">¶</a></h2>
+<h2>Etiquetado gramatical (<em>Part of Speech Tagging</em>)<a class="headerlink" href="#etiquetado-gramatical-part-of-speech-tagging" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Como parte de la desambiguación, se suele realizar la tarea de asignar una categoría a cada palabra: sujeto, nombre, verbo, adjetivo.</p>
 <p>Algunos enlaces de ayuda:</p>
 <ul class="simple">
@@ -1738,7 +1736,7 @@
 </div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="representacion-del-texto">
-<h1>Representación del texto<a class="headerlink" href="#representacion-del-texto" title="Permalink to this headline">¶</a></h1>
+<h1>Representación del texto<a class="headerlink" href="#representacion-del-texto" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Dependiendo del tipo de problema <em>NLP</em>, el texto deberá transformarse en una representación adecuada para las herramientas y algoritmos empleandos para abordar el problema. Una de las más usadas es crear representaciones numéricas. Esencialmente, se trata de convertir texto en un vector/arreglo de números.</p>
 <p>Los valores en el arreglo pueden ser por ejemplo: la frequencia del <em>tóken</em> en el documento, el código en un <em>word embedding</em>, o la métrica <em>TF-IDF</em>.</p>
 <p>Hay escenarios en los cuales estos vectores pueden tener un gran tamaño, en estos casos se recomienda emplear alguna estrategia para reducir la dimensionalidad de los vectores (Ej. <em>feature hashing</em>, <em>locality sensitive hashing</em>).</p>
@@ -1920,7 +1918,7 @@
 </div>
 <p><a id="10"></a></p>
 <div class="section" id="one-hot-encoding-tuplas-de-palabras">
-<h2>One-hot encoding (tuplas de palabras)<a class="headerlink" href="#one-hot-encoding-tuplas-de-palabras" title="Permalink to this headline">¶</a></h2>
+<h2>One-hot encoding (tuplas de palabras)<a class="headerlink" href="#one-hot-encoding-tuplas-de-palabras" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Los <em>feature vectors</em> se utilizan para representar características simbólicas o númericas; llamados <em>features</em>, de un objeto de una manera matemática y fácilmente analizable.</p>
 <p>Se crea un vocabulario con todas la palabras de todos los documentos. Y cada documento se representa como una arreglo donde se indica la presencia o ausencia de una palabra en el documento.</p>
 <p><img alt="one-hot-encoding" src="../../_images/03-one-hot-encoding.png" /></p>
@@ -1965,7 +1963,7 @@
 <p><a id="11"></a></p>
 </div>
 <div class="section" id="tf-idf-term-frequency-inverse-document-frequency">
-<h2>TF-IDF (Term frequency, inverse document frequency)<a class="headerlink" href="#tf-idf-term-frequency-inverse-document-frequency" title="Permalink to this headline">¶</a></h2>
+<h2>TF-IDF (Term frequency, inverse document frequency)<a class="headerlink" href="#tf-idf-term-frequency-inverse-document-frequency" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><strong>Conteos</strong></p>
 <p>El vector de cada documento contiene la cantidad de veces que aparece una palabra (no solo se marca su presencia/ausencia)</p>
 <p><strong>TF-IDF (Term frequency, inverse document frequency)</strong></p>
@@ -1976,7 +1974,7 @@
 todo el conjunto de documentos (es un término común).</p>
 <p>La idea es capturar la importancia de las palabras en los documentos. No captura las relaciones entre las palabras.</p>
 <div class="section" id="tf-term-frequency">
-<h3>TF  (Term Frequency)<a class="headerlink" href="#tf-term-frequency" title="Permalink to this headline">¶</a></h3>
+<h3>TF  (Term Frequency)<a class="headerlink" href="#tf-term-frequency" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cuerpo_texto_normalizado</span>
@@ -2351,7 +2349,7 @@ Variables:
 </div>
 </div>
 <div class="section" id="idf-inverse-document-frequency">
-<h3>IDF  (Inverse Document Frequency)<a class="headerlink" href="#idf-inverse-document-frequency" title="Permalink to this headline">¶</a></h3>
+<h3>IDF  (Inverse Document Frequency)<a class="headerlink" href="#idf-inverse-document-frequency" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>idf(t) = log(cantidad-documentos/cantidad-documentos-con-el-termino)</p>
 <p>Min = 1; A valores más alejados de 1, mayor IDF</p>
 <p>Interpretación de resultados</p>
@@ -2433,8 +2431,8 @@ Variables:
 </div>
 </div>
 <div class="section" id="word-embeddings">
-<h2>Word embeddings<a class="headerlink" href="#word-embeddings" title="Permalink to this headline">¶</a></h2>
-<p>Asociación de palabras con códigos numéricos que capturan su similitud semánticas. Por ejemplo, Londres tendrá un valor numérico cercano a París porque ambas palabras tiene significado parecido (ambas son ciudades importantes de europa); de la misma manera, la distancia entre las palabras “varón” y “mujer” sería similar a la distancia que existe entre “rey” y “reina”.</p>
+<h2>Word embeddings<a class="headerlink" href="#word-embeddings" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Asociación de palabras con códigos numéricos que capturan su similitud semánticas. Por ejemplo, Londres tendrá un valor numérico cercano a París porque ambas palabras tiene significado parecido (ambas son ciudades importantes de europa); de la misma manera, la distancia entre las palabras «varón» y «mujer» sería similar a la distancia que existe entre «rey» y «reina».</p>
 <p>Son generadas a partir de grandes cuerpos de texto por algoritmos basados en redes neuronales, reducción de la dimensionalidad de matrices de co-ocurrencia y modelos probabilísticos.</p>
 <p>Algunos enlaces de ayuda:</p>
 <ul class="simple">
@@ -2469,16 +2467,16 @@ Variables:
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../2.%20Web%20Scraping/Ejercicio_NUSO_web_scrappng.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../2.%20Web%20Scraping/Ejercicio_NUSO_web_scrappng.html" title="anterior página">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">anterior</p>
             <p class="prev-next-title">Ejercicio: Web Scrapping para extraer información de un artículo</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../4.%20Segundo%20parcial%20Ejercicio%20tema%201%2C%202%20y%203/Prueba%20dos%20resulta%20por%20el%20profesor.html" title="next page">
+    <a class='right-next' id="next-link" href="../4.%20Segundo%20parcial%20Ejercicio%20tema%201%2C%202%20y%203/Prueba%20dos%20resulta%20por%20el%20profesor.html" title="siguiente página">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">siguiente</p>
         <p class="prev-next-title">Ejercicio misceláneo: NLP, Web Scrapping</p>
     </div>
     <i class="fas fa-angle-right"></i>
@@ -2490,7 +2488,7 @@ Variables:
     <footer class="footer">
   <p>
     
-      By Daniel Oropeza and Sebastian Jordan<br/>
+      Por Daniel Oropeza and Sebastian Jordan<br/>
     
   </p>
 </footer>

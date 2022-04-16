@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,6 +40,7 @@
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -50,12 +51,12 @@
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../../_static/logo.png"/>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
     <link rel="next" title="Guardar y deployar un modelo predictivo" href="../13.%20Guardar%20y%20utilizar%20una%20API/Guardar%20y%20desplegar%20un%20clasificador.html" />
     <link rel="prev" title="Ejercicio misceláneo: Feature Selection, Modelos predictivos" href="../11.%20Cuarto%20parcial/pec04.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="es">
     
 
     <!-- Google Analytics -->
@@ -87,7 +88,7 @@
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
@@ -247,8 +248,8 @@
             
             <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
                 data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-arrow-left"></i>
                 <i class="fas fa-arrow-up"></i>
@@ -256,7 +257,7 @@
             
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -264,10 +265,10 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../../_sources/Notebooks/12. Arboles de decision/04-arboles-de-decision-python.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -280,12 +281,9 @@
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/danioropeza/introduccion-ciencia-de-datos"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/danioropeza/introduccion-ciencia-de-datos/issues/new?title=Issue%20on%20page%20%2FNotebooks/12. Arboles de decision/04-arboles-de-decision-python.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        
         
     </div>
 </div>
@@ -293,8 +291,8 @@
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -305,7 +303,7 @@
     <div class="dropdown-buttons">
         
         <a class="binder-button" href="https://mybinder.org/v2/gh/danioropeza/introduccion-ciencia-de-datos/master?urlpath=tree/docs/Notebooks/12. Arboles de decision/04-arboles-de-decision-python.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
@@ -322,7 +320,7 @@
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+                <i class="fas fa-list"></i> Contenido
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -388,7 +386,7 @@
                     <div id="jb-print-toc">
                         
                         <div>
-                            <h2> Contents </h2>
+                            <h2> Contenido </h2>
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
@@ -448,7 +446,7 @@
               <div>
                 
   <div class="section" id="arboles-de-decision-hiperparametros-random-forest-y-optimizacion-de-parametros">
-<h1>Arboles de decisión: Hiperparámetros, Random Forest y Optimización de Parámetros<a class="headerlink" href="#arboles-de-decision-hiperparametros-random-forest-y-optimizacion-de-parametros" title="Permalink to this headline">¶</a></h1>
+<h1>Arboles de decisión: Hiperparámetros, Random Forest y Optimización de Parámetros<a class="headerlink" href="#arboles-de-decision-hiperparametros-random-forest-y-optimizacion-de-parametros" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -696,11 +694,11 @@ f1 del clasificador - version 1 : 0.67
 </div>
 </div>
 <div class="section" id="hiperparametros-para-ajustar-la-complejidad-del-modelo">
-<h2>Hiperparámetros para ajustar la complejidad del modelo<a class="headerlink" href="#hiperparametros-para-ajustar-la-complejidad-del-modelo" title="Permalink to this headline">¶</a></h2>
+<h2>Hiperparámetros para ajustar la complejidad del modelo<a class="headerlink" href="#hiperparametros-para-ajustar-la-complejidad-del-modelo" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><strong><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html">DecisionTreeClassifier</a></strong></p>
 <ul class="simple">
 <li><p>class_weight=None importancia relativa de los valores de clasificación</p></li>
-<li><p>criterion=’entropy’/’gini’</p></li>
+<li><p>criterion=”entropy”/”gini”</p></li>
 <li><p>max_depth=3 distancia max entre a raiz y las hojas</p></li>
 <li><p>max_features=None numero max de variables a considerar</p></li>
 <li><p>max_leaf_nodes=20 numero max de hojas</p></li>
@@ -715,7 +713,7 @@ f1 del clasificador - version 1 : 0.67
 </div>
 </div>
 <div class="section" id="sobreajuste">
-<h1>Sobreajuste<a class="headerlink" href="#sobreajuste" title="Permalink to this headline">¶</a></h1>
+<h1>Sobreajuste<a class="headerlink" href="#sobreajuste" title="Enlazar permanentemente con este título">¶</a></h1>
 <p><strong><a class="reference external" href="https://es.wikipedia.org/wiki/Sobreajuste">Sobreajuste</a></strong></p>
 <a class="reference internal image-reference" href="../../_images/29-overfitting-sobreajuste.png"><img alt="../../_images/29-overfitting-sobreajuste.png" src="../../_images/29-overfitting-sobreajuste.png" style="width: 600px;" /></a>
 <a class="reference internal image-reference" href="../../_images/30.0-underfitting.png"><img alt="../../_images/30.0-underfitting.png" src="../../_images/30.0-underfitting.png" style="width: 600px;" /></a>
@@ -723,7 +721,7 @@ f1 del clasificador - version 1 : 0.67
 <p><strong>Como evitar?</strong>
 En el caso particular de los árboles de decisión, reducir nodos del arbol cuando no incrementan los indicadores con una buena cantidad de datos de prueba (<strong>poda - pruning</strong>)</p>
 <div class="section" id="ensemble-learning">
-<h2>Ensemble learning<a class="headerlink" href="#ensemble-learning" title="Permalink to this headline">¶</a></h2>
+<h2>Ensemble learning<a class="headerlink" href="#ensemble-learning" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><strong><a class="reference external" href="https://en.wikipedia.org/wiki/Ensemble_learning">Ensemble learning</a></strong></p>
 <a class="reference internal image-reference" href="../../_images/31-ensemble-learning.png"><img alt="../../_images/31-ensemble-learning.png" src="../../_images/31-ensemble-learning.png" style="width: 600px;" /></a>
 <a class="reference internal image-reference" href="../../_images/32-ensemble-arboles.png"><img alt="../../_images/32-ensemble-arboles.png" src="../../_images/32-ensemble-arboles.png" style="width: 600px;" /></a>
@@ -731,7 +729,7 @@ En el caso particular de los árboles de decisión, reducir nodos del arbol cuan
 </div>
 </div>
 <div class="section" id="random-forest">
-<h1>Random Forest<a class="headerlink" href="#random-forest" title="Permalink to this headline">¶</a></h1>
+<h1>Random Forest<a class="headerlink" href="#random-forest" title="Enlazar permanentemente con este título">¶</a></h1>
 <p><strong><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">RandomForestClassifier</a></strong></p>
 <p>Se crean varios árboles <strong>INDEPENDIENTES</strong> variando los casos/observaciones del conjunto de entrenamiento y/o las variables empleadas durante el proceso de entrenamiento.</p>
 <p>Las predicciones de cada modelo (árbol) tienen el mismo peso y el resultado final es el voto de mayoría</p>
@@ -801,7 +799,7 @@ f1 del clasificador - version 1 : 0.64
 </div>
 </div>
 <div class="section" id="gradient-boosted-trees">
-<h1>Gradient Boosted Trees<a class="headerlink" href="#gradient-boosted-trees" title="Permalink to this headline">¶</a></h1>
+<h1>Gradient Boosted Trees<a class="headerlink" href="#gradient-boosted-trees" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Los arboles se construyen en <strong>secuencia</strong> a partir de una fracción del conjunto de entrenamiento; la idea central es que el siguiente árbol corriga los errores del anterior.:</p>
 <p>Inicialmente, todos los ejemplos tienen la misma probabilidad de ser seleccionados. A partir del segundo árbol, los ejemplos que fueros incorrectamente clasificados por el árbol anterior tienen mayor probabilidad de ser seleccionados. (para detectar patrones que no fueron detectados por el anterior)</p>
 <p>En consecuencia, cada árbol se crea a partir de una fracción diferente del conjunto de entrenamiento. En la colección final, la clasificación de cada árbol tiene un peso mayor en función del desempeño obtenido con el conjuto de entrenamiento.</p>
@@ -874,7 +872,7 @@ f1 del clasificador - version 1 : 0.69
 </div>
 </div>
 <div class="section" id="parametros-que-se-pueden-emplear-para-evitar-sobre-ajuste-overfitting">
-<h2>Parámetros que se pueden emplear para evitar sobre ajuste (overfitting)<a class="headerlink" href="#parametros-que-se-pueden-emplear-para-evitar-sobre-ajuste-overfitting" title="Permalink to this headline">¶</a></h2>
+<h2>Parámetros que se pueden emplear para evitar sobre ajuste (overfitting)<a class="headerlink" href="#parametros-que-se-pueden-emplear-para-evitar-sobre-ajuste-overfitting" title="Enlazar permanentemente con este título">¶</a></h2>
 <ul class="simple">
 <li><p><strong>n_estimators</strong>: a mayor cantidad de ejemplos, se puede incrementar el valor n_estimators para evitar sobreajuste</p></li>
 <li><p><strong>learning_rate</strong>, determina la probabilidad de que un ejemplo sea seleccionado en la siguiente iteracion, se recomienda un valor entre 0.1 - 0.2 para reducir la probabilidad de que se produzca overfitting</p></li>
@@ -884,7 +882,7 @@ f1 del clasificador - version 1 : 0.69
 </div>
 </div>
 <div class="section" id="optimizacion-de-parametros">
-<h1>Optimización de parámetros<a class="headerlink" href="#optimizacion-de-parametros" title="Permalink to this headline">¶</a></h1>
+<h1>Optimización de parámetros<a class="headerlink" href="#optimizacion-de-parametros" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Objetivo: encontrar la mejor combinación de hiper-parámetros para obtener el clasificador con el mejor desempeño.</p>
 <p>Para evitar probar manualmente todas las posibles combinaciones de valores para todos los posibles parámetros que resultan en un buen desempeño, se emplean técnicas de optimización para evitar buscar en todo el espacio de posible valores y garantizar al mismo tiempo un buen desempeño del clasificador.</p>
 <p><strong><a class="reference external" href="https://github.com/hyperopt/hyperopt">hyperopt (Distributed Hyperparameter Optimization)</a></strong> es el módulo python que facilita realizar esta tarea.</p>
@@ -1082,16 +1080,16 @@ f1 del clasificador - version 1 : 0.73
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../11.%20Cuarto%20parcial/pec04.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../11.%20Cuarto%20parcial/pec04.html" title="anterior página">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">anterior</p>
             <p class="prev-next-title">Ejercicio misceláneo: Feature Selection, Modelos predictivos</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../13.%20Guardar%20y%20utilizar%20una%20API/Guardar%20y%20desplegar%20un%20clasificador.html" title="next page">
+    <a class='right-next' id="next-link" href="../13.%20Guardar%20y%20utilizar%20una%20API/Guardar%20y%20desplegar%20un%20clasificador.html" title="siguiente página">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">siguiente</p>
         <p class="prev-next-title">Guardar y deployar un modelo predictivo</p>
     </div>
     <i class="fas fa-angle-right"></i>
@@ -1103,7 +1101,7 @@ f1 del clasificador - version 1 : 0.73
     <footer class="footer">
   <p>
     
-      By Daniel Oropeza and Sebastian Jordan<br/>
+      Por Daniel Oropeza and Sebastian Jordan<br/>
     
   </p>
 </footer>

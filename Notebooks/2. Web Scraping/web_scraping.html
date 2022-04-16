@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,6 +40,7 @@
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -50,12 +51,12 @@
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../../_static/logo.png"/>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
     <link rel="next" title="Ejercicio: Web Scrapping para extraer información de un artículo" href="Ejercicio_NUSO_web_scrappng.html" />
     <link rel="prev" title="Explorando y analizando DataFrames con Pandas" href="../1.%20Pandas/pandas.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="es">
     
 
     <!-- Google Analytics -->
@@ -87,7 +88,7 @@
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
@@ -247,8 +248,8 @@
             
             <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
                 data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-arrow-left"></i>
                 <i class="fas fa-arrow-up"></i>
@@ -256,7 +257,7 @@
             
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -264,10 +265,10 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../../_sources/Notebooks/2. Web Scraping/web_scraping.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -280,12 +281,9 @@
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/danioropeza/introduccion-ciencia-de-datos"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/danioropeza/introduccion-ciencia-de-datos/issues/new?title=Issue%20on%20page%20%2FNotebooks/2. Web Scraping/web_scraping.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        
         
     </div>
 </div>
@@ -293,8 +291,8 @@
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -305,7 +303,7 @@
     <div class="dropdown-buttons">
         
         <a class="binder-button" href="https://mybinder.org/v2/gh/danioropeza/introduccion-ciencia-de-datos/master?urlpath=tree/docs/Notebooks/2. Web Scraping/web_scraping.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
@@ -322,7 +320,7 @@
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+                <i class="fas fa-list"></i> Contenido
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -367,7 +365,7 @@
                     <div id="jb-print-toc">
                         
                         <div>
-                            <h2> Contents </h2>
+                            <h2> Contenido </h2>
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
@@ -406,7 +404,7 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="web-scraping">
-<h1>Web Scraping<a class="headerlink" href="#web-scraping" title="Permalink to this headline">¶</a></h1>
+<h1>Web Scraping<a class="headerlink" href="#web-scraping" title="Enlazar permanentemente con este título">¶</a></h1>
 <p><strong><a class="reference external" href="https://www.imperva.com/learn/application-security/web-scraping-attack/">Web Scraping</a></strong> es el proceso de utilizar bots para extraer contenido y datos de un sitio web. En este proceso, se extrae el código HTML y los datos almacenados en una base de datos. Web Scraping permite replicar el contenido completo de un sitio web en cualquier lugar. Muchos negocios digitales que dependen de la recolección de datos, utilizan este proceso.</p>
 <p>A continuación, se mencionan algunos de los casos aplicables de esta técnica:</p>
 <ul class="simple">
@@ -430,7 +428,7 @@
 </ol>
 <p><a id="1"></a></p>
 <div class="section" id="extraer-el-codigo-html">
-<h2>Extraer el código HTML<a class="headerlink" href="#extraer-el-codigo-html" title="Permalink to this headline">¶</a></h2>
+<h2>Extraer el código HTML<a class="headerlink" href="#extraer-el-codigo-html" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Para explicar el proceso de Web Scraping, analizaremos la página web <a class="reference external" href="http://localhost:8000/auto_mpg.html">Auto MPG web page</a>. Esa página web es una página que fue creada para este tutorial. Recolecta los datos open source del dataset <a class="reference external" href="https://archive.ics.uci.edu/ml/datasets/auto+mpg">Auto MPG</a>. Puedes crear un pequeño servidor que retorne página <a class="reference external" href="http://localhost:8000/auto_mpg.html">Auto MPG web page</a>. Puedes cambiar el puerto si es diferente al 8000.</p>
 <p>Las columnas del dataset son las siguientes: nombre, cilindros, peso, año, territorio, aceleración, millas por galón, caballos de potencia y desplazamiento.</p>
 <p>Ejecuta la siguientes líneas de código:</p>
@@ -13537,7 +13535,7 @@ is referenced in &quot;Quinlan,R. (1993). Combining Instance-Based and Model-Bas
 <p><a id="2"></a></p>
 </div>
 <div class="section" id="realizar-busquedas">
-<h2>Realizar búsquedas<a class="headerlink" href="#realizar-busquedas" title="Permalink to this headline">¶</a></h2>
+<h2>Realizar búsquedas<a class="headerlink" href="#realizar-busquedas" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Puedes utilizar la función .find y .find_all para encontrar los elementos que deseas</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -13573,7 +13571,7 @@ is referenced in &quot;Quinlan,R. (1993). Combining Instance-Based and Model-Bas
 <p><a id="3"></a></p>
 </div>
 <div class="section" id="experimentar-estrategias-para-extraer-datos">
-<h2>Experimentar estrategias para extraer datos<a class="headerlink" href="#experimentar-estrategias-para-extraer-datos" title="Permalink to this headline">¶</a></h2>
+<h2>Experimentar estrategias para extraer datos<a class="headerlink" href="#experimentar-estrategias-para-extraer-datos" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Si deseas extraer únicamente el contenido sin elementos HTML, realiza lo siguiente.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -13596,7 +13594,7 @@ is referenced in &quot;Quinlan,R. (1993). Combining Instance-Based and Model-Bas
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;generator object PageElement.stripped_strings at 0x000001B2D9E089E0&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;generator object PageElement.stripped_strings at 0x000001EA053389E0&gt;
 [&#39;Chevrolet Chevelle Malibu&#39;, &#39;(1970, USA)&#39;, &#39;Achieves&#39;, &#39;18.0 mpg&#39;, &#39;with&#39;, &#39;8&#39;, &#39;cylinders backed by&#39;, &#39;130&#39;, &#39;hp, 307.0 cubic inches of displacement, weighing&#39;, &#39;3,504&#39;, &#39;lbs with 0-60 mph acceleration in&#39;, &#39;12.0&#39;, &#39;seconds&#39;]
 </pre></div>
 </div>
@@ -13633,7 +13631,7 @@ is referenced in &quot;Quinlan,R. (1993). Combining Instance-Based and Model-Bas
 <p><a id="4"></a></p>
 </div>
 <div class="section" id="crear-funciones-y-procesar-los-elementos">
-<h2>Crear funciones y procesar los elementos<a class="headerlink" href="#crear-funciones-y-procesar-los-elementos" title="Permalink to this headline">¶</a></h2>
+<h2>Crear funciones y procesar los elementos<a class="headerlink" href="#crear-funciones-y-procesar-los-elementos" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Finalmente, te recomendamos crear funciones para cada item y procesar los elementos que contienen los datos.</p>
 <p>A continuación se muestra un ejemplo:</p>
 <div class="cell docutils container">
@@ -13721,7 +13719,7 @@ is referenced in &quot;Quinlan,R. (1993). Combining Instance-Based and Model-Bas
 <p><a id="5"></a></p>
 </div>
 <div class="section" id="almacenar-los-datos-en-archivos">
-<h2>Almacenar los datos en archivos<a class="headerlink" href="#almacenar-los-datos-en-archivos" title="Permalink to this headline">¶</a></h2>
+<h2>Almacenar los datos en archivos<a class="headerlink" href="#almacenar-los-datos-en-archivos" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Puedes almacenar los datos extraídos en un archivo de tu preferencia</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -13763,16 +13761,16 @@ is referenced in &quot;Quinlan,R. (1993). Combining Instance-Based and Model-Bas
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../1.%20Pandas/pandas.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../1.%20Pandas/pandas.html" title="anterior página">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">anterior</p>
             <p class="prev-next-title">Explorando y analizando DataFrames con Pandas</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Ejercicio_NUSO_web_scrappng.html" title="next page">
+    <a class='right-next' id="next-link" href="Ejercicio_NUSO_web_scrappng.html" title="siguiente página">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">siguiente</p>
         <p class="prev-next-title">Ejercicio: Web Scrapping para extraer información de un artículo</p>
     </div>
     <i class="fas fa-angle-right"></i>
@@ -13784,7 +13782,7 @@ is referenced in &quot;Quinlan,R. (1993). Combining Instance-Based and Model-Bas
     <footer class="footer">
   <p>
     
-      By Daniel Oropeza and Sebastian Jordan<br/>
+      Por Daniel Oropeza and Sebastian Jordan<br/>
     
   </p>
 </footer>

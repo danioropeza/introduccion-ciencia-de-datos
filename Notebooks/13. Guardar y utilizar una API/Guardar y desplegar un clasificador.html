@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,6 +40,7 @@
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -50,11 +51,11 @@
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../../_static/logo.png"/>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
     <link rel="prev" title="Arboles de decisión: Hiperparámetros, Random Forest y Optimización de Parámetros" href="../12.%20Arboles%20de%20decision/04-arboles-de-decision-python.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="es">
     
 
     <!-- Google Analytics -->
@@ -86,7 +87,7 @@
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
@@ -246,8 +247,8 @@
             
             <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
                 data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-arrow-left"></i>
                 <i class="fas fa-arrow-up"></i>
@@ -255,7 +256,7 @@
             
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -263,10 +264,10 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../../_sources/Notebooks/13. Guardar y utilizar una API/Guardar y desplegar un clasificador.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -279,12 +280,9 @@
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/danioropeza/introduccion-ciencia-de-datos"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/danioropeza/introduccion-ciencia-de-datos/issues/new?title=Issue%20on%20page%20%2FNotebooks/13. Guardar y utilizar una API/Guardar y desplegar un clasificador.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        
         
     </div>
 </div>
@@ -292,8 +290,8 @@
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -304,7 +302,7 @@
     <div class="dropdown-buttons">
         
         <a class="binder-button" href="https://mybinder.org/v2/gh/danioropeza/introduccion-ciencia-de-datos/master?urlpath=tree/docs/Notebooks/13. Guardar y utilizar una API/Guardar y desplegar un clasificador.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
@@ -321,7 +319,7 @@
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+                <i class="fas fa-list"></i> Contenido
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -371,7 +369,7 @@
                     <div id="jb-print-toc">
                         
                         <div>
-                            <h2> Contents </h2>
+                            <h2> Contenido </h2>
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
@@ -415,7 +413,7 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="guardar-y-deployar-un-modelo-predictivo">
-<h1>Guardar y deployar un modelo predictivo<a class="headerlink" href="#guardar-y-deployar-un-modelo-predictivo" title="Permalink to this headline">¶</a></h1>
+<h1>Guardar y deployar un modelo predictivo<a class="headerlink" href="#guardar-y-deployar-un-modelo-predictivo" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Para este ejemplo utilizaremos un árbol de decisión</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -555,7 +553,7 @@
 </div>
 </div>
 <div class="section" id="optimizacion-de-parametros">
-<h2>Optimización de parámetros<a class="headerlink" href="#optimizacion-de-parametros" title="Permalink to this headline">¶</a></h2>
+<h2>Optimización de parámetros<a class="headerlink" href="#optimizacion-de-parametros" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#https://github.com/conda-forge/hyperopt-feedstock</span>
@@ -1087,7 +1085,7 @@ f1 del clasificador - version 5 : 0.73
 </div>
 </div>
 <div class="section" id="guardar-el-clasificador">
-<h2>Guardar el clasificador<a class="headerlink" href="#guardar-el-clasificador" title="Permalink to this headline">¶</a></h2>
+<h2>Guardar el clasificador<a class="headerlink" href="#guardar-el-clasificador" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Python cuenta con librerias de serialización que facilitan guardar el clasificador en un archivo (pickle, joblib); este archivo puede ser restaurado para hacer predicciones.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1112,7 +1110,7 @@ f1 del clasificador - version 5 : 0.73
 </div>
 </div>
 <div class="section" id="cargar-el-clasificador">
-<h2>Cargar el clasificador<a class="headerlink" href="#cargar-el-clasificador" title="Permalink to this headline">¶</a></h2>
+<h2>Cargar el clasificador<a class="headerlink" href="#cargar-el-clasificador" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Abrir el archivo en modo lectura de contenido binario y cargar el clasificdor</span>
@@ -1153,7 +1151,7 @@ f1 del clasificador - version 6 : 0.70
 </div>
 </div>
 <div class="section" id="modificar-el-clasificador">
-<h2>Modificar el clasificador<a class="headerlink" href="#modificar-el-clasificador" title="Permalink to this headline">¶</a></h2>
+<h2>Modificar el clasificador<a class="headerlink" href="#modificar-el-clasificador" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tree_v6</span><span class="o">.</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="mi">700</span>
@@ -1189,11 +1187,11 @@ f1 del clasificador - version 6 : 0.70
 </div>
 </div>
 <div class="section" id="opciones-de-despliegue">
-<h2>Opciones de despliegue<a class="headerlink" href="#opciones-de-despliegue" title="Permalink to this headline">¶</a></h2>
+<h2>Opciones de despliegue<a class="headerlink" href="#opciones-de-despliegue" title="Enlazar permanentemente con este título">¶</a></h2>
 <a class="reference internal image-reference" href="../../_images/35-opciones-despliegue.png"><img alt="../../_images/35-opciones-despliegue.png" src="../../_images/35-opciones-despliegue.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="flask">
-<h2>Flask<a class="headerlink" href="#flask" title="Permalink to this headline">¶</a></h2>
+<h2>Flask<a class="headerlink" href="#flask" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Flask es un <strong>framework</strong> minimalista escrito en Python que permite crear aplicaciones web rápidamente y con un mínimo número de líneas de código - <strong>Wikipedia</strong>.</p>
 <p><strong><a class="reference external" href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a></strong></p>
 <p>Ahora, utilizando el clasificador guardado anteriormente en un archivo binario, se creará un servicio API REST en Flask para poder utilizarlo. Para hacerlo funcionar hacerlo, colocar el código en un archivo .py y hacerlo correr en la consola.</p>
@@ -1312,10 +1310,10 @@ f1 del clasificador - version 6 : 0.70
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../12.%20Arboles%20de%20decision/04-arboles-de-decision-python.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../12.%20Arboles%20de%20decision/04-arboles-de-decision-python.html" title="anterior página">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">anterior</p>
             <p class="prev-next-title">Arboles de decisión: Hiperparámetros, Random Forest y Optimización de Parámetros</p>
         </div>
     </a>
@@ -1326,7 +1324,7 @@ f1 del clasificador - version 6 : 0.70
     <footer class="footer">
   <p>
     
-      By Daniel Oropeza and Sebastian Jordan<br/>
+      Por Daniel Oropeza and Sebastian Jordan<br/>
     
   </p>
 </footer>

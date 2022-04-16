@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,6 +40,7 @@
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -50,12 +51,12 @@
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../../_static/logo.png"/>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
     <link rel="next" title="Procesamiento de Lenguaje Natural (NLP)" href="../3.%20Procesamiento%20del%20Lenguaje%20Natural/nlp.html" />
     <link rel="prev" title="Web Scraping" href="web_scraping.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="es">
     
 
     <!-- Google Analytics -->
@@ -87,7 +88,7 @@
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar este libro ..." aria-label="Buscar este libro ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
@@ -247,8 +248,8 @@
             
             <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
                 data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                aria-expanded="true" aria-label="Navegación de palanca" aria-controls="site-navigation"
+                title="Navegación de palanca" data-toggle="tooltip" data-placement="left">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-arrow-left"></i>
                 <i class="fas fa-arrow-up"></i>
@@ -256,7 +257,7 @@
             
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Descarga esta pagina"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -264,10 +265,10 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../../_sources/Notebooks/2. Web Scraping/Ejercicio_NUSO_web_scrappng.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Descargar archivo fuente" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimir en PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -280,12 +281,9 @@
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/danioropeza/introduccion-ciencia-de-datos"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/danioropeza/introduccion-ciencia-de-datos/issues/new?title=Issue%20on%20page%20%2FNotebooks/2. Web Scraping/Ejercicio_NUSO_web_scrappng.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        
         
     </div>
 </div>
@@ -293,8 +291,8 @@
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -305,7 +303,7 @@
     <div class="dropdown-buttons">
         
         <a class="binder-button" href="https://mybinder.org/v2/gh/danioropeza/introduccion-ciencia-de-datos/master?urlpath=tree/docs/Notebooks/2. Web Scraping/Ejercicio_NUSO_web_scrappng.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Lanzamiento Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
@@ -340,7 +338,7 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="ejercicio-web-scrapping-para-extraer-informacion-de-un-articulo">
-<h1>Ejercicio: Web Scrapping para extraer información de un artículo<a class="headerlink" href="#ejercicio-web-scrapping-para-extraer-informacion-de-un-articulo" title="Permalink to this headline">¶</a></h1>
+<h1>Ejercicio: Web Scrapping para extraer información de un artículo<a class="headerlink" href="#ejercicio-web-scrapping-para-extraer-informacion-de-un-articulo" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Este ejercicio consiste en extraer la información más importante de una página web. Para este ejercicio elegimos un artículo sobre el transhumanismo que se puede encontrar <a class="reference external" href="https://nuso.org/articulo/hacia-un-futuro-transhumano/">en este enlace</a>. El artículo está en español. Dejaremos aquí el abstracto de este.</p>
 <blockquote>
 <div><p>El transhumanismo es un movimiento intelectual que propone superar los límites naturales de la humanidad mediante el mejoramiento tecnológico y, eventualmente, la separación de la mente del cuerpo humano. Si bien ha sido históricamente marginal y sectario, sus planteos de medicina mejorativa, su materialismo radical, incluso sus controvertidas ideas de eugenesia, inmortalidad y singularidad adquieren creciente interés en un momento en el cual la tecnología amenaza con avanzar sobre esferas de la vida humana hasta ahora en apariencia intocables.</p>
@@ -455,7 +453,7 @@
 </div>
 </div>
 </div>
-<p>Después de obtener todos los atributos principales del artículo, podemos hacer la “limpieza del texto”. Si nosotros, por ejemplo, quisiéramos utilizar este texto para entrenar un modelo de machine learning, normalmente tenemos que eliminar los elementos del texto que no son relevantes para el modelo de machine learning. Por ejemplo, podemos eliminar las palabras de parada, las palabras como los artículos, que no brindan información importante.</p>
+<p>Después de obtener todos los atributos principales del artículo, podemos hacer la «limpieza del texto». Si nosotros, por ejemplo, quisiéramos utilizar este texto para entrenar un modelo de machine learning, normalmente tenemos que eliminar los elementos del texto que no son relevantes para el modelo de machine learning. Por ejemplo, podemos eliminar las palabras de parada, las palabras como los artículos, que no brindan información importante.</p>
 <p>También normalmente se quiere tener el vocabulario del texto. Es decir, cuantas palabras diferentes tiene el texto.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -559,16 +557,16 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="web_scraping.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="web_scraping.html" title="anterior página">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">anterior</p>
             <p class="prev-next-title">Web Scraping</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../3.%20Procesamiento%20del%20Lenguaje%20Natural/nlp.html" title="next page">
+    <a class='right-next' id="next-link" href="../3.%20Procesamiento%20del%20Lenguaje%20Natural/nlp.html" title="siguiente página">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">siguiente</p>
         <p class="prev-next-title">Procesamiento de Lenguaje Natural (<em>NLP</em>)</p>
     </div>
     <i class="fas fa-angle-right"></i>
@@ -580,7 +578,7 @@
     <footer class="footer">
   <p>
     
-      By Daniel Oropeza and Sebastian Jordan<br/>
+      Por Daniel Oropeza and Sebastian Jordan<br/>
     
   </p>
 </footer>
