@@ -55,5 +55,6 @@ El contenido de los notebooks fue creado y estructurado por nuestro docente Marc
 
 ### Contacto de información
 Daniel Oropeza: https://www.linkedin.com/in/dani-oropeza/
+
 Sebastian Jordan: https://www.linkedin.com/in/jordanmontt/
 
